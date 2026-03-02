@@ -86,7 +86,7 @@ def main_scraper():
         view_as_json(sourcename, hwt_title, hwt_author, hwt_date, hwt_link, hwt_content)
 
         log.info('Collecting the next article in %s seconds...', delay_scraping())
-        delay_scraping
+        delay_scraping()
 
     if all_scraped:
         log.info("All data in the JSON file has been collected successfully.")
