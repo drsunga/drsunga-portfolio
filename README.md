@@ -14,7 +14,7 @@ This repository is structured to reflect my learning process and hands-on experi
 
 * **`certifications/`**: Here, I will document my progress toward various cloud certifications, including study notes, practice labs, and exam preparation materials.
 
-* **`notes/`**: A collection of my personal notes on core cloud concepts, services, and best practices. Think of it as a personal knowledge base that I'm building along the way.
+* **`notes/`**: A collection of my personal notes on different things I learned. Think of it as a personal knowledge base that I'm building along the way.
 
 * **`scripts/`**: A place to store useful scripts for automation, deployment, and management of cloud resources.
 
