@@ -1,4 +1,4 @@
-                                     GIT SETUP: A STEP BY STEP GUIDE
+# GIT SETUP: A STEP BY STEP GUIDE
 
 ### Prerequisite: GitHub Account
 
@@ -11,9 +11,11 @@ To authenticate Git operations over SSH, you'll need to generate a new SSH key o
 #### Steps to Generate a New SSH Key:
 
 1. **Open your terminal**  and navigate to your home directory.
-2. **Generate the SSH Key using the command below. Be sure to replace the email address with the one you used for your GitHub account.** <br>
+2. **Generate the SSH Key** using the command below. Be sure to replace the email address with the one you used for your GitHub account. <br>
 
-        ssh-keygen -t ed25519 -C "your_email@example[.]com"
+```bash
+ssh-keygen -t ed25519 -C "your_email@example[.]com"
+```
 
 3. **Follow the prompts** by pressing **Enter** at each step to accept the default settings. This will create your new SSH Key pair.
 4. Once completed, you can verify this by checking for the presence of the key files in the ./.ssh directory.
@@ -24,26 +26,35 @@ To authenticate Git operations over SSH, you'll need to generate a new SSH key o
 After completing the steps above, proceed with installing and configuring GitHub CLI. This step is necessary to enable authenticated access, allowing you to push changes in the main repository on hosted on GitHub.
 
 1. Install GitHub CLI
-   
-        winget install GitHub.cli
 
-        brew install gh
-    
+```bash
+# Windows installer
+winget install GitHub.cli
+
+# MacOS installer
+brew install gh
+```
+
 2. Authenticate with GitHub:
 
-        gh auth login
-    
-3. When prompted select the following:
-      * GitHub
-      * HTTPS
-      * Yes
-      * Login with Browser
+```bash
+gh auth login
+```
 
-4. A browser window will open. Log in using your GitHub account.
-5. Enter the **PIN** displayed in your terminal into the browser when prompted.
-6. Click **Authorize** to complete the authentication process.
-7. Confirm that you are successfully authenticated by running:
-    
-        gh auth status
-    
+3. When prompted select the following:
+
+> - **GitHub**
+> - **HTTPS**
+> - **Yes**
+> - **Login with Browser**
+
+5. A browser window will open. Log in using your GitHub account.
+6. Enter the **PIN** displayed in your terminal into the browser when prompted.
+7. Click **Authorize** to complete the authentication process.
+8. Confirm that you are successfully authenticated by running:
+
+```bash
+gh auth status
+```
+
 Note: This ensures the GitHub CLI is properly set up and authenticated with your account.
