@@ -259,9 +259,108 @@ def chapter_4_loops():
     for food in buffet_foods:
         print(f"- {food}")
 
+############################
+# Chapter 5: IF Statements #
+############################
+
+def chapter_5_if_statements():
+    # --- 5-1: Basic Conditional Tests ---
+
+    car = 'subaru'
+    print("Is car == 'subaru'? I predict True.")
+    print(car == 'subaru')
+
+    print("\nIs car == 'audi'? I predict False.")
+    print(car == 'audi')
+
+    food = 'pizza'
+    print("\nIs food == 'pizza'? I predict True.")
+    print(food == 'pizza')
+
+    print("\nIs food == 'broccoli'? I predict False.")
+    print(food == 'broccoli')
+
+    age = 25
+    print("\nIs age == 25? I predict True.")
+    print(age == 25)
+
+    # --- 5-2: More Advanced Tests ---
+
+    # 1. Tests for equality and inequality with strings
+    language = 'Python'
+    print("\nIs language == 'Python'? I predict True.")
+    print(language == 'Python')
+
+    print("Is language != 'Java'? I predict True.")
+    print(language != 'Java')
+
+    # 2. Tests using the lower() method
+    name = 'Eric'
+    print("\nIs name.lower() == 'eric'? I predict True.")
+    print(name.lower() == 'eric')
+
+    print("Is name == 'eric'? I predict False (Case sensitivity matters!).")
+    print(name == 'eric')
+
+    # --- 5-5: Alien Color Test ---
+
+    alien_color = 'red'
+
+    if alien_color == 'green':
+        print("You just earned 5 points!")
+    elif alien_color == 'yellow':
+        print("You just earned 10 points!")
+    else:
+        print("You just earned 15 points!")
+
+    # --- 5-6: Stages of Life Test ---
+
+    age = 21
+
+    if age < 2:
+        print("You're a baby!")
+    elif age < 4:
+        print("You're a toddler!")
+    elif age < 13:
+        print("You're a kid!")
+    elif age < 20:
+        print("You're a teenager!")
+    elif age < 65:
+        print("You're an adult!")
+    else:
+        print("You're an elder!")
+
+    # --- 5-7: Favorite Fruit Test ---
+
+    favorite_fruits = ["orange", "banana", "blueberries"]
+
+    if "orange" in favorite_fruits():
+        print("You really like orange!")
+    if "banana" in favorite_fruits():
+        print("You really like banana!")
+    if "pineapple" in favorite_fruits():
+        print("You really like pineapple!")
+    if "grapes" in favorite_fruits():
+        print("You really like grapes!")
+    if "blueberries" in favorite_fruits():
+        print("You really like blueberries!")
+
+    # --- 5-10: Favorite Fruit Test ---
+
+    current_users = ['eric', 'willie', 'admin', 'erin', 'Ever']
+    new_users = ['sarah', 'Willie', 'PHIL', 'ever', 'Iona']
+
+    current_users_lower = [user.lower() for user in current_users]
+
+    for new_user in new_users:
+        if new_user.lower() in current_users_lower:
+            print(f"Sorry {new_user}, that name is taken.")
+        else:
+            print(f"Great, {new_user} is still available.")
+    return
 
 # chapter_1_starting()
 # chapter_2_variables()
 # chapter_3_lists()
 # chapter_4_loops()
-
+# chapter_5_if_statements()
